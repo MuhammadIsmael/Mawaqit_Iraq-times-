@@ -1,0 +1,6 @@
+{
+  "name": "Mawaqit Iraq",
+  "description": "Android TV prayer times display for Iraq mosques and homes with custom layouts, Athan notifications, and live holy shrine video streams.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
