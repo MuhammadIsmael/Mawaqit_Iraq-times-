@@ -24,7 +24,10 @@ jobs:
         run: chmod +x gradlew
 
       - name: Create google-services.json from Secret
-        run: echo '${{ secrets.GOOGLE_SERVICES_JSON }}' > app/google-services.json
+        run: |
+          cat << 'EOF' > app/google-services.json
+          ${{ secrets.GOOGLE_SERVICES_JSON }}
+          EOF
 
       - name: Build Debug APK
         run: ./gradlew assembleDebug
